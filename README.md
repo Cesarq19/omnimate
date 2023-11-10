@@ -1,1 +1,1 @@
-# omnimate
+# Omnimate
