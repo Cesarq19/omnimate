@@ -13,6 +13,7 @@
     <link name="base_link">
         <inertial>
             <origin xyz="0.00498197982182523 5.70233829969297E-05 -0.0121008098068578" rpy="0 0 0" />
+            <!--<origin xyz="0.00498197982182523 5.70233829969297E-05 -0.0121008098068578" rpy="0 0 0" />-->
             <mass value="0.486218814966626" />
             <inertia
                 ixx="0.00196277727666921"
@@ -56,8 +57,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh
-                    filename="package://omnimate_description/meshes/wheels/front_right_wheel_X3.STL" />
+                <sphere radius="0.07162"/>
             </geometry>
         </collision>
     </link>
@@ -82,8 +82,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh
-                    filename="package://omnimate_description/meshes/wheels/front_left_wheel_X3.STL" />
+                <sphere radius="0.07162"/>
             </geometry>
         </collision>
     </link>
@@ -110,8 +109,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh
-                    filename="package://omnimate_description/meshes/wheels/back_right_wheel_X3.STL" />
+                <sphere radius="0.07162"/>
             </geometry>
         </collision>
     </link>
@@ -138,8 +136,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh
-                    filename="package://omnimate_description/meshes/wheels/back_left_wheel_X3.STL" />
+                <sphere radius="0.07162"/>
             </geometry>
         </collision>
     </link>
