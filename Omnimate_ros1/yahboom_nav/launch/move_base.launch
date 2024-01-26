@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <!-- Costmaps -->
+        <rosparam command="load" file="$(find yahboom_nav)/param/costmap_common.yaml" ns="global_costmap"/>
+        <rosparam command="load" file="$(find yahboom_nav)/param/costmap_common.yaml" ns="local_costmap"/>
+        <rosparam command="load" file="$(find yahboom_nav)/param/costmap_local.yaml"/>
+        <rosparam command="load" file="$(find yahboom_nav)/param/costmap_global.yaml"/>
+
+        <!--Global Planner-->
+
+        <!-- NavfnROS-->
+        <param name="base_global_planner" value="navfn/NavfnROS"/>
+        <rosparam command="load" file="$(find yahboom_nav)/param/navfnros_planner.yaml"/>
+        
+        <!-- Local Planner -->
+
+        <!-- Teb -->
+        <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
+        <rosparam command="load" file="$(find yahboom_nav)/param/teb_planner.yaml"/>
+        
+        <!-- Common -->
+        <rosparam command="load" file="$(find yahboom_nav)/param/move_base.yaml"/>
+        
+    </node>
+
+</launch>
