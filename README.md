@@ -14,5 +14,25 @@ It is equipped with high-performance hardware configurations such as lidar, dept
 It can realize applications such as mapping and application navigation, automatic driving, human feature recognition.
 Support remote control of mobile phones, handles, computer keyboards.
 
-## :books: Package Summary
+## :wrench: Setting up
+
+To start, you will need to connect via SSH to the jetson nano, using your credentials:
+
+`user`: jetson
+`password`: yahboom
+
+And taking into account that the external machine (PC) is connected to the `RAMEL_5G` network
+
+
+```
+ssh jetson@192.168.31.109
+```
+
+Once started, the commands can be executed to put the robot into operation, using:
+
+```
+roslaunch yahboomcar_bringup bringup.launch
+```
+
+In this case, the package corresponding to teleoperation with the remote control will not have to be started externally, since it is called automatically, you only have to verify that the control is linked to the robot, which is the case when the light indicator stays on constantly.
 
