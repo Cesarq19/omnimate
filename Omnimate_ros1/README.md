@@ -106,4 +106,7 @@ See [`yahboom_slam`](./yahboom_slam/) for more information.
 
 The [`yahboom_nav`](./yahboom_nav/launch/navigation.launch) package provides a navigation stack based on the great AMCL package.
 
-https://github.com/RAMEL-ESPOL/Omnimate/docs/robot_navigation.mp4
+
+
+https://github.com/RAMEL-ESPOL/Omnimate/assets/90804290/0648415d-6822-4050-bd19-e20bbc07cd83
+
